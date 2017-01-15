@@ -1,9 +1,8 @@
 var nasaApotd = 'https://api.nasa.gov/planetary/apod?api_key=rp5xMerplzvRvWDUFzwiTECBEwbvMxz7ZiNasiQQ';
 
-
 function getDataFromApi(searchTerm, callback) {
   var settings = {
-    url: nasaApotd,
+    url: 'https://api.nasa.gov/planetary/apod?api_key=rp5xMerplzvRvWDUFzwiTECBEwbvMxz7ZiNasiQQ',
     information: {
       s: searchTerm,
       r: 'json'
@@ -19,7 +18,7 @@ function displaySearchData(data) {
   var resultElement = '';
   if (data.Search) {
     data.Search.forEach(function(result) {
-     resultElement += '<p>' + result.date + '</p>';
+     resultElement += '<p>' + result.explanation + '</p>';
     });
   }
   else {
@@ -31,7 +30,7 @@ function displaySearchData(data) {
 
 
 
-function watchSubmit() {
+function lookForInput() {
   $('.js-search-form').submit(function(e) {
     e.preventDefault();
     var query = $(this).find('.js-query').val();
@@ -39,8 +38,9 @@ function watchSubmit() {
   });
 }
 
-$(function(){watchSubmit();}
-  );
+$(function(){lookForInput();});
+
+
 
  
 
