@@ -1,0 +1,62 @@
+
+
+body {
+	background-image: url("http://www.public-domain-image.com/free-images/space/orion-nebula-space-galaxy.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+h1 {
+	color: #3366cc;
+	font-family: 'Oswald', sans-serif;
+	font-size: 45px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+
+h2 {
+	color: pink;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+
+}
+
+input {
+	margin: 0 auto;
+}
+
+button {
+	border-radius: 30px;
+}
+
+p {
+	font-size: 45px;
+	color: #cc66ff;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px){
+
+h1 {
+	color: pink;
+}
+
+
+body {
+	background-repeat: repeat;
+}
+
+h1, h2 {
+	font-size: 20px;
+}
+
+}
