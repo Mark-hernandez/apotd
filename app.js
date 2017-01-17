@@ -12,11 +12,11 @@ function getDataFromApi(searchTerm, callback) {
 };
 
 function displaySearchData(data) {
-  console.log(data);
+ console.log(data);
   var resultElement = '';
   var titleElement = '';
   var imageElement = ''.toString();
-
+  
   if (data.url) {
      resultElement += '<p>' + data.explanation + '</p>';
     
@@ -27,7 +27,8 @@ function displaySearchData(data) {
   }
 
   if (data.url) {
-    imageElement =+ '<img src="' + data.hdurl + '">'; 
+    imageElement += '<img src="' + data.hdurl + '">'; 
+    console.log(imageElement)  
   }
 
   else {

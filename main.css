@@ -33,6 +33,11 @@ h2 {
 
 }
 
+img {
+	min-width: 100%;
+	height: auto;
+}
+
 form {
 	margin: 0 auto;
 	text-align: center;
@@ -64,7 +69,7 @@ p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1000px){
 
 h1 {
 	color: pink;
@@ -85,6 +90,10 @@ body {
 h1, h2 {
 	font-size: 20px;
 }
+
+img {
+	min-width: 100%;
+	height: auto;
 
 
 
