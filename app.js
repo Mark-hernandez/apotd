@@ -16,6 +16,8 @@ function displaySearchData(data) {
   var resultElement = '';
   var titleElement = '';
   var imageElement = ''.toString();
+  var imageCredits ='';
+
   
   if (data.url) {
      resultElement += '<p>' + data.explanation + '</p>';
@@ -27,20 +29,32 @@ function displaySearchData(data) {
   }
 
   if (data.url) {
-    imageElement += '<img src="' + data.hdurl + '">'; 
+    imageElement += '<img src="' + data.url + '">'; 
     console.log(imageElement)  
   }
 
+  if (data.url) {
+    imageCredits += '<p>' + "picture by: " + data.copyright + '</p>';
+    
+
+  }
+
   else {
-    resultElement += '<p>No results</p>';
+    resultElement += '<p>' + "NO RESULTS" + '</P>';
   }
   
   $('.js-search-results').html(resultElement);
   $('.js-title-results').html(titleElement);
   $('.js-image-results').html(imageElement);
+  $('.js-credits').html(imageCredits);
 
 
 };
+
+$("button").click(function() {
+  $("h2").hide(200);
+  });
+
 
 function lookForInput() {
   $('.js-search-form').submit(function(e) {
@@ -52,6 +66,8 @@ function lookForInput() {
 }
 
 $(function(){lookForInput();});
+
+
 
 
 
