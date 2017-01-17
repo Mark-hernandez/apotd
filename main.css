@@ -30,12 +30,16 @@ h2 {
 	box-sizing: border-box;
 	padding-left: 75px;
 	padding-right: 75px;
+	text-align: center;
 
 }
 
 img {
 	min-width: 100%;
 	height: auto;
+	box-sizing: border-box;
+
+	
 }
 
 form {
@@ -69,11 +73,13 @@ p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1000px){
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-h1 {
-	color: pink;
-}
+
+
 
 p {
 	font-size: 15px;
@@ -87,14 +93,29 @@ body {
 	background-attachment: fixed;
 }
 
-h1, h2 {
-	font-size: 20px;
+h1,  {
+	font-size: 70px;
+	color: #ff0066;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+
+}
+
+h2 {
+	color: pink;
+	font-size: 40px;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
 }
 
 img {
-	min-width: 100%;
-	height: auto;
+	box-sizing: border-box;
+}
 
+.resultsbox {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 
 }
