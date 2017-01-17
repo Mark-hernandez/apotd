@@ -34,7 +34,7 @@ function displaySearchData(data) {
   }
 
   if (data.url) {
-    imageCredits += '<p>' + "picture by: " + data.copyright + '</p>';
+    imageCredits += '<p>' + "Photgraph by: " + data.copyright + '</p>';
     
 
   }
