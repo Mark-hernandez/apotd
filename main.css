@@ -30,7 +30,7 @@ h2 {
 	box-sizing: border-box;
 	padding-left: 75px;
 	padding-right: 75px;
-	
+
 }
 
 form {
@@ -64,7 +64,7 @@ p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
 
 h1 {
 	color: pink;
@@ -76,7 +76,10 @@ p {
 
 }
 body {
-	background-repeat: repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 h1, h2 {
