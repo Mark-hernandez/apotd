@@ -3,6 +3,7 @@ body {
 	background-image: url("http://www.public-domain-image.com/free-images/space/orion-nebula-space-galaxy.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 
@@ -16,11 +17,20 @@ h1 {
 }
 
 
+
+
 h2 {
 	color: pink;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 
+}
+
+.resultsbox {
+	box-sizing: border-box;
+	padding-left: 75px;
+	padding-right: 75px;
+	
 }
 
 form {

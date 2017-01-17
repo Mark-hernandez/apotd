@@ -15,7 +15,7 @@ function displaySearchData(data) {
   console.log(data);
   var resultElement = '';
   var titleElement = '';
-  var imageElement = " ";
+  var imageElement = ''.toString();
 
   if (data.url) {
      resultElement += '<p>' + data.explanation + '</p>';
@@ -27,7 +27,7 @@ function displaySearchData(data) {
   }
 
   if (data.url) {
-    imageElement =+ '<img src="' + data.hdurl + '">' 
+    imageElement =+ '<img src="' + data.hdurl + '">'; 
   }
 
   else {
@@ -39,33 +39,7 @@ function displaySearchData(data) {
   $('.js-image-results').html(imageElement);
 
 
-}
-
-
-
-/*function displayImageData(data) {
-  console.log(data);
-  var imageElement = ''
-}
-*/
-
-/*function displayTitleData(data) {
-  var titleElement = '';
-  if (data.url) {
-    titleElement += '<p>' + data.title + '</p>';
-  }
-
- 
- else {
-  titleElement =+ '<p> No results</p>';
- }
-
- $('js-title-results').html(titleElement);
-  
-}
-*/
-
-
+};
 
 function lookForInput() {
   $('.js-search-form').submit(function(e) {
@@ -87,30 +61,3 @@ $(function(){lookForInput();});
 
 
 
-
-/*
-$.ajax({
-  url: apotdUrl,
-  success: function(result){
-  if("galaxy" in result) {
-    $("#copyright").text("Image Credits: " + result.copyright);
-  }
-  else {
-    $("#copyright").text("Image Credits: " + "Public Domain");
-  }
-  
-  if(result.media_type == "video") {
-    $("#apod_img_id").css("display", "none"); 
-    $("#apod_vid_id").attr("src", result.url);
-  }
-  else {
-    $("#apod_vid_id").css("display", "none"); 
-    $("#apod_img_id").attr("src", result.url);
-  }
-  $("#reqObject").text(apotdUrl);
-  $("#returnObject").text(JSON.stringify(result, null, 4));  
-  $("#apod_explaination").text(result.explanation);
-  $("#apod_title").text(result.title);
-}
-});
-*/
