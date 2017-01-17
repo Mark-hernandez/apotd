@@ -12,17 +12,58 @@ function getDataFromApi(searchTerm, callback) {
 };
 
 function displaySearchData(data) {
+  console.log(data);
   var resultElement = '';
+  var titleElement = '';
+  var imageElement = " ";
+
   if (data.url) {
      resultElement += '<p>' + data.explanation + '</p>';
     
   }
+
+   if (data.url) {
+    titleElement += '<p>' + data.title + '</p>';
+  }
+
+  if (data.url) {
+    imageElement =+ '<img src="' + data.hdurl + '">' 
+  }
+
   else {
     resultElement += '<p>No results</p>';
   }
   
   $('.js-search-results').html(resultElement);
+  $('.js-title-results').html(titleElement);
+  $('.js-image-results').html(imageElement);
+
+
 }
+
+
+
+/*function displayImageData(data) {
+  console.log(data);
+  var imageElement = ''
+}
+*/
+
+/*function displayTitleData(data) {
+  var titleElement = '';
+  if (data.url) {
+    titleElement += '<p>' + data.title + '</p>';
+  }
+
+ 
+ else {
+  titleElement =+ '<p> No results</p>';
+ }
+
+ $('js-title-results').html(titleElement);
+  
+}
+*/
 
 
 

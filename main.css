@@ -1,5 +1,4 @@
 
-
 body {
 	background-image: url("http://www.public-domain-image.com/free-images/space/orion-nebula-space-galaxy.jpg");
 	background-size: cover;
@@ -8,7 +7,7 @@ body {
 
 
 h1 {
-	color: #3366cc;
+	color: #ff0066;
 	font-family: 'Oswald', sans-serif;
 	font-size: 45px;
 	text-align: center;
@@ -24,13 +23,24 @@ h2 {
 
 }
 
-input {
+form {
 	margin: 0 auto;
+	text-align: center;
 }
 
 button {
-	border-radius: 30px;
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 0.5px;
+    cursor: pointer;
 }
+
 
 p {
 	font-size: 45px;
@@ -50,7 +60,11 @@ h1 {
 	color: pink;
 }
 
+p {
+	font-size: 15px;
+}
 
+}
 body {
 	background-repeat: repeat;
 }
@@ -58,5 +72,7 @@ body {
 h1, h2 {
 	font-size: 20px;
 }
+
+
 
 }
