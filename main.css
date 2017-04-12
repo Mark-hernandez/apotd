@@ -39,7 +39,7 @@ h3 {
 	padding-left: 100px;
 	padding-right: 100px;
 	text-align: center;
-	background:rgba(255,255,255,0.5);
+	
 
 }
 
@@ -77,8 +77,6 @@ p {
 	text-align: center;
 	font-weight: bold;
 	font-family: 'Oswald', sans-serif;
-	background:rgba(255,255,255,0.5);
-
 }
 
 
@@ -94,7 +92,7 @@ p {
 
 	p {
 		font-size: 15px;
-		background:rgba(255,255,255,0.5);
+	
 
 	}
 
@@ -135,6 +133,7 @@ p {
 	.resultsbox {
 		padding-left: 40px;
 		padding-right: 40px;
+		background:rgba(255,255,255,0.5);
 	}
 
 
